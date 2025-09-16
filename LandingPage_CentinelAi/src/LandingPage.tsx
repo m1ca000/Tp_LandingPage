@@ -102,6 +102,30 @@ export const LandingPage: React.FC = () => {
         </div>
       </section>
 
+      {/* How It Works Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12">¿Cómo funciona?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="p-6">
+              <div className="h-16 w-16 mx-auto flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-2xl font-bold mb-6">1</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Regístrate</h3>
+              <p className="text-gray-600">Crea una cuenta en minutos y configura tu organización.</p>
+            </div>
+            <div className="p-6">
+              <div className="h-16 w-16 mx-auto flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-2xl font-bold mb-6">2</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Conecta tus dispositivos</h3>
+              <p className="text-gray-600">Integra cámaras, molinetes y usuarios de forma centralizada.</p>
+            </div>
+            <div className="p-6">
+              <div className="h-16 w-16 mx-auto flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-2xl font-bold mb-6">3</div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Monitorea y controla</h3>
+              <p className="text-gray-600">Accede al panel en tiempo real y administra todo desde un solo lugar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,6 +178,31 @@ export const LandingPage: React.FC = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Publicidad */}
+      <section className="py-24 bg-gradient-to-br from-indigo-600 to-purple-700 text-white text-center">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-4xl font-bold mb-6">Tu seguridad comienza hoy</h2>
+          <p className="text-indigo-100 text-lg mb-8">
+            Empieza a controlar accesos y monitorear tus dispositivos con la 
+            potencia de Centinelai. Rápido, seguro y escalable.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/register"
+              className="bg-white text-indigo-600 hover:bg-gray-100 px-8 py-4 rounded-lg text-lg font-semibold transition-colors"
+            >
+              Crear Cuenta Gratis
+            </Link>
+            <Link
+              to="/login"
+              className="border-2 border-white hover:bg-white/10 px-8 py-4 rounded-lg text-lg font-semibold transition-colors"
+            >
+              Iniciar Sesión
+            </Link>
           </div>
         </div>
       </section>
